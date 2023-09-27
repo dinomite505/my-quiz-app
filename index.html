@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Title of the website -->
+        <title>Quiz-App</title>
+
+        <!-- Einbindung von externen Icons durch Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Einbindung von weiteren Icons durch Boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- Einbindung der eigenen Stylesheet-Datei -->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+        <!-- Meta-Informationen für responsive Design und Zeichencodierung -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    </head>
+    <body>
+        <!-- Start-Button zum Beginnen des Quiz -->
+        <div class="start"><button>Mit dem Quiz beginnen!</button></div>
+        
+        <!-- Informationsbox mit den Regeln des Quiz -->
+        <div class="info-box">
+            <div class="info-title">Regeln</div>
+            <div class="info-list">
+                <!-- Die einzelnen Regeln des Quiz -->
+                <div class = "info"><i class = "fas fa-asterisk"></i>  Du hast für jede Frage nur <span>10 Sekunden</span> Zeit.</div>
+                <div class = "info"><i class = "fas fa-asterisk"></i>  Du musst eine Option auswählen, bevor du zur nächsten Frage übergehen kannst.</div>
+                <div class = "info"><i class = "fas fa-asterisk"></i>  Nach der Auswahl einer Option gibt es kein Zurück mehr.</div>
+                <div class = "info"><i class = "fas fa-asterisk"></i>  Du kannst das Quiz während des Spiels nicht verlassen.</div>
+                <!-- Buttons zum Verlassen oder Fortfahren des Quiz -->
+                <div class="buttons">
+                  <button class="quit">Quiz beenden</button>
+                  <button class="cont">weiter</button>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Hauptbereich des Quiz -->
+      <div class="quiz-box">
+          <!-- Header des Quiz mit Titel, Timer und Fortschrittsanzeige -->
+          <header>
+              <div class="title">Quiz App</div>
+              <div class="timer">
+                  <div class="text">Verbleibende Zeit </div>
+                  <div class="sec">10</div>
+              </div>
+              <div class="timeline"></div>
+          </header>
+              
+          <!-- Fragebereich des Quiz -->
+          <section>
+              <div class="question">
+                  <!-- Hier wird die Frage eingefügt -->
+              </div>
+              <div class="option-list">
+                  <div class="option">
+                      <!-- Hier werden die Antwortoptionen eingefügt -->
+                  </div> 
+              </div>
+          </section>
+                  
+          <!-- Footer des Quiz mit Fragezähler und "Weiter"-Button -->
+          <footer>
+              <div class="total-questions">
+                  <!-- Hier wird der Fragezähler eingefügt -->
+              </div>
+              <button class="next">Nächste</button>
+          </footer>   
+      </div>
+      
+      <!-- Ergebnisbereich des Quiz -->
+      <div class="result-box">
+          <div class="icon">
+              <img src="https://www.dropbox.com/s/2b81pov6c4nuev3/crown.png?dl=1">
+          </div>
+          <div class="complete-text">Du hast das Quiz beendet!</div>
+          <div class="score-text">
+              <!-- Hier wird der Punktestand eingefügt -->
+          </div>
+          <div class="buttons">
+              <button class="restart">Wiederholen</button>
+              <button class="exit">Beenden</button>
+          </div>  
+      </div>
+     
+      <!-- Einbindung der externen JavaScript-Dateien -->
+      <script src="app.js"></script>
+      <script src="questions.js"></script>
+  </body>
+</html>
